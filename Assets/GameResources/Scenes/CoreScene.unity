@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &158738111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8325398380580838879, guid: 1508bbf4407257e43846824b0367b4f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6988600139542286840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &695187678
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,12 +459,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6988600139542286840}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1468686454 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 973382816172247677, guid: 1508bbf4407257e43846824b0367b4f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 6988600139542286840}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1639398555
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,12 +650,12 @@ PrefabInstance:
         type: 3}
       propertyPath: autoInjectGameObjects.Array.data[0]
       value: 
-      objectReference: {fileID: 1468686454}
+      objectReference: {fileID: 1086038178}
     - target: {fileID: 4795406718489539394, guid: 1508bbf4407257e43846824b0367b4f9,
         type: 3}
       propertyPath: autoInjectGameObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 1086038178}
+      objectReference: {fileID: 158738111}
     - target: {fileID: 8125631228185474976, guid: 1508bbf4407257e43846824b0367b4f9,
         type: 3}
       propertyPath: m_Name

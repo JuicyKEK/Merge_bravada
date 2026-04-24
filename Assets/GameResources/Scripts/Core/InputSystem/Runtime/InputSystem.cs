@@ -4,13 +4,13 @@ using R3;
 namespace GameResources.Scripts.Core.InputSystem
 {
     
-    public class InputSystem : MonoBehaviour, IInputSystem
+    public class InputSystem : IInputSystem
     {
         public Observable<Unit> OnMouseLeftDown { get; private set; }
         public Observable<Unit> OnMouseLeftUp { get; private set; }
         public Observable<bool> OnMouseLeftHold { get; private set; }
     
-        void Awake()
+        public InputSystem()
         {
             OnMouseLeftDown = Observable.EveryUpdate()
                 .Where(_ => Input.GetMouseButtonDown(0))

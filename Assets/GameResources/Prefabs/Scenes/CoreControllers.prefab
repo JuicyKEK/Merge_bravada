@@ -53,7 +53,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 327075054483454010}
-  - component: {fileID: 3289528347726073542}
   m_Layer: 0
   m_Name: CharacterMovementController
   m_TagString: Untagged
@@ -76,18 +75,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8131808813063591162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3289528347726073542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646568021066546854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 436bc4812dce424e91a3610c867e4b6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1910737939121596061
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +167,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7542408631165229434}
-  - component: {fileID: 8559211878221630009}
   m_Layer: 0
   m_Name: InputSystem
   m_TagString: Untagged
@@ -203,15 +189,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8131808813063591162}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8559211878221630009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8325398380580838879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4181a5784084e63ac78a78045f3bc5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

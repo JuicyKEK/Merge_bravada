@@ -21,7 +21,6 @@ namespace Bravada.Core.Characters
         public void Init(IMovementOnField movementOnField)
         {
             m_MovementOnField = movementOnField;
-            Debug.Log(m_MovementOnField != null);
         }
 
         public void StartMovement()

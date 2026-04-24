@@ -3,18 +3,31 @@ using R3;
 using System;
 using GameResources.Scripts.Core.InputSystem;
 using VContainer;
+using VContainer.Unity;
 
 namespace Bravada.Core.MovementCharacters.Controllers
 {
-    public class ObjectMover: MonoBehaviour
+    public class ObjectMover : IDisposable, IStartable
     {
-        [Inject] private IInputSystem m_InputSystem;
-        
         private IMovementObject m_CurrentObject;
         private CompositeDisposable m_Disposables = new();
+        private IInputSystem m_InputSystem;
         private Camera m_MainCamera;
         
-        private void Start()
+        public ObjectMover(Camera mainCamera, IInputSystem inputSystem)
+        {
+            m_MainCamera = mainCamera;
+            m_InputSystem = inputSystem;
+
+            SetupInputHandling();
+        }
+        
+        public void Start()
+        {
+            //нужен, пока не вызываю класс в других местах 
+        }
+        
+        private void SetupInputHandling()
         {
             m_MainCamera = Camera.main;
             
@@ -67,8 +80,8 @@ namespace Bravada.Core.MovementCharacters.Controllers
             }
             return null;
         }
-        
-        private void OnDestroy()
+
+        public void Dispose()
         {
             m_Disposables?.Dispose();
         }
