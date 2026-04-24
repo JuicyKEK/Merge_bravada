@@ -23,10 +23,10 @@ namespace Bravada.Core.GameField.Controllers
 
         private void SetFieldBorders()
         {
-            m_Borders = new Vector2(GameFieldConstants.StartPoint.x, //+ GameFieldConstants.FieldEdgeLength / 2,
+            m_Borders = new Vector2(GameFieldConstants.StartPoint.x + GameFieldConstants.FieldEdgeLength / 2,
                 GameFieldConstants.StartPoint.x +
                 GameFieldConstants.FieldEdgeLength * GameFieldConstants.NumberFieldsInWidth
-                - GameFieldConstants.FieldEdgeLength);
+                - GameFieldConstants.FieldEdgeLength + GameFieldConstants.FieldEdgeLength / 2);
         }
         
         private float RoundToNearest(float value)
