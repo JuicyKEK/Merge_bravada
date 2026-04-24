@@ -249,18 +249,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &825159706 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6092166101296933188, guid: 1508bbf4407257e43846824b0367b4f9,
-    type: 3}
-  m_PrefabInstance: {fileID: 6988600139542286840}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba766b93f19443f0a754b521f22f40a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +447,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 695187679}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1086038178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1646568021066546854, guid: 1508bbf4407257e43846824b0367b4f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6988600139542286840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1468686454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 973382816172247677, guid: 1508bbf4407257e43846824b0367b4f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6988600139542286840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1639398555
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,16 +628,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2557265353180046416, guid: 7754ef7067bcd424386cd44f0c3d170f,
-        type: 3}
-      propertyPath: m_GameFieldController
-      value: 
-      objectReference: {fileID: 825159706}
-    - target: {fileID: 3400719990081737833, guid: 7754ef7067bcd424386cd44f0c3d170f,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -651,6 +641,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4795406718489539394, guid: 1508bbf4407257e43846824b0367b4f9,
+        type: 3}
+      propertyPath: autoInjectGameObjects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795406718489539394, guid: 1508bbf4407257e43846824b0367b4f9,
+        type: 3}
+      propertyPath: autoInjectGameObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 1468686454}
+    - target: {fileID: 4795406718489539394, guid: 1508bbf4407257e43846824b0367b4f9,
+        type: 3}
+      propertyPath: autoInjectGameObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1086038178}
     - target: {fileID: 8125631228185474976, guid: 1508bbf4407257e43846824b0367b4f9,
         type: 3}
       propertyPath: m_Name
